@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>learn.yyc.project</groupId>
+    <artifactId>myhome</artifactId>
+    <version>1.0</version>
+    <modules>
+        <module>learn_kafka</module>
+        <module>learn_redis</module>
+        <module>learn_spring</module>
+        <module>learn_netty</module>
+        <module>learn_dubbo</module>
+        <module>learn_rabbitmq</module>
+        <module>learn_activemq</module>
+        <module>learn_rocketmq</module>
+        <module>learn_elasticsearch</module>
+        <module>learn_design</module>
+    </modules>
+
+    <packaging>pom</packaging>
+</project>
