@@ -18,6 +18,7 @@
         <module>learn_rocketmq</module>
         <module>learn_elasticsearch</module>
         <module>learn_design</module>
+        <module>learn_test</module>
     </modules>
 
     <packaging>pom</packaging>
