@@ -6,7 +6,6 @@ package learn.yyc.design.designer.abstractfactory;
  */
 public class Apple implements Fruit {
 
-	@Override
 	public void juicing() {
 		System.out.println("榨苹果汁");
 	}
