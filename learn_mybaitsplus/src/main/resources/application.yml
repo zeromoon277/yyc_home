@@ -7,6 +7,6 @@ spring:
     name: mybaits_plus
   datasource:
     driver-class-name: com.mysql.jdbc.Driver
-    url: jdbc:mysql://106.13.188.27:3306/yyc
+    url: jdbc:mysql://106.13.188.27:3306/yyc?useSSL=false
     username: root
     password: root

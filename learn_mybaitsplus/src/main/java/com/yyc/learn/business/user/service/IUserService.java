@@ -1,7 +1,9 @@
 package com.yyc.learn.business.user.service;
 
-import com.yyc.learn.business.user.entity.User;
+import com.baomidou.mybatisplus.core.metadata.IPage;
+import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import com.baomidou.mybatisplus.extension.service.IService;
+import com.yyc.learn.business.user.entity.User;
 
 /**
  * <p>
@@ -13,4 +15,11 @@ import com.baomidou.mybatisplus.extension.service.IService;
  */
 public interface IUserService extends IService<User> {
 
+    Integer countAgeThan(int age);
+
+    /**
+     * @param page
+     * @return
+     */
+    IPage<User> selectUserPage(Page<User> page);
 }

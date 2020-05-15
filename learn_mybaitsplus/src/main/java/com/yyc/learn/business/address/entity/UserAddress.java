@@ -1,12 +1,14 @@
-package com.yyc.learn.business.user.entity;
+package com.yyc.learn.business.address.entity;
 
 import com.baomidou.mybatisplus.annotation.IdType;
+import com.baomidou.mybatisplus.annotation.TableField;
 import com.baomidou.mybatisplus.annotation.TableId;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
 import lombok.experimental.Accessors;
 
 import java.io.Serializable;
+import java.time.LocalDateTime;
 
 /**
  * <p>
@@ -14,12 +16,12 @@ import java.io.Serializable;
  * </p>
  *
  * @author yyc
- * @since 2020-05-14
+ * @since 2020-05-15
  */
 @Data
 @EqualsAndHashCode(callSuper = false)
 @Accessors(chain = true)
-public class User implements Serializable {
+public class UserAddress implements Serializable {
 
     private static final long serialVersionUID = 1L;
 
@@ -27,22 +29,28 @@ public class User implements Serializable {
      * 主键ID
      */
     @TableId(value = "id", type = IdType.AUTO)
-    private Long id;
+    private Integer id;
 
     /**
-     * 姓名
+     * 省
      */
-    private String name;
+    private String provice;
 
     /**
-     * 年龄
+     * 城市
      */
-    private Integer age;
+    private String city;
 
     /**
-     * 邮箱
+     * 创建时间
      */
-    private String email;
+    @TableField("createTime")
+    private LocalDateTime createTime;
+
+    /**
+     * 用户ID
+     */
+    private Integer userId;
 
 
 }
