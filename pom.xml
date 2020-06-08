@@ -20,6 +20,13 @@
         <module>learn_design</module>
         <module>learn_test</module>
         <module>learn_mybaitsplus</module>
+        <module>learn_seata</module>
+        <module>learn_shardingjdbc</module>
+        <module>learn_leecode</module>
+        <module>learn_spring_security</module>
+        <module>learn_nginx</module>
+        <module>learn_docker</module>
+        <module>learn_zookeeper</module>
     </modules>
 
     <packaging>pom</packaging>
