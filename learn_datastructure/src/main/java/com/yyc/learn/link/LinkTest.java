@@ -9,17 +9,14 @@ public class LinkTest {
     public static void main(String[] args) {
 
 
-
-
     }
 
 
-    private static Node reverse(Node node){
+    private static Node reverse(Node node) {
         Node head = node;
 
 
-
-return head;
+        return head;
 
     }
 }
