@@ -1,0 +1,13 @@
+server:
+  port: 8080
+
+
+spring:
+  application:
+    name: elasticsearch
+  data:
+    elasticsearch:
+      cluster-nodes: localhost:9300
+      # 节点名称，默认为elasticsearch，如果docker安装的，这里是docker-cluster
+      # http://localhost:9200/_cluster/state 查看节点名称
+      cluster-name: docker-cluster
