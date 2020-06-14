@@ -20,6 +20,7 @@
         <module>learn_design</module>
         <module>learn_test</module>
         <module>learn_mybaitsplus</module>
+        <module>learn_datastructure</module>
     </modules>
 
     <packaging>pom</packaging>

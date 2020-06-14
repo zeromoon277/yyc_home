@@ -1,0 +1,12 @@
+server:
+  port: 8080
+
+
+spring:
+  application:
+    name: mybaits_plus
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://106.13.188.27:3306/yyc
+    username: root
+    password: root
