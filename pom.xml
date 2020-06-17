@@ -28,6 +28,7 @@
         <module>learn_docker</module>
         <module>learn_zookeeper</module>
         <module>learn_datastructure</module>
+        <module>learn_k8s</module>
     </modules>
 
     <packaging>pom</packaging>
