@@ -12,8 +12,8 @@ import java.util.concurrent.TimeoutException;
  * @version 1.0
  * @date 2020/6/18 0018 下午 15:45
  */
-public class Consumer02 {
-    private static String EXCHANGE_NAME="exchange-fanout-yyc";
+public class Consumer03_01 {
+    private static String EXCHANGE_NAME="exchange-direct-yyc";
     private static String QUEUE_NAME="queue-yyc-task";
 
     public static void main(String[] args) throws IOException, TimeoutException {
@@ -21,10 +21,10 @@ public class Consumer02 {
         Connection connection = connectionFactory.newConnection();
         Channel channel = connection.createChannel();
 
-        channel.exchangeDeclare(EXCHANGE_NAME, BuiltinExchangeType.FANOUT);
+        channel.exchangeDeclare(EXCHANGE_NAME, BuiltinExchangeType.DIRECT);
 
         String queueName = channel.queueDeclare().getQueue();
-        channel.queueBind(queueName, EXCHANGE_NAME, "A");
+        channel.queueBind(queueName, EXCHANGE_NAME, "B");
 
 
         DeliverCallback deliverCallback = new DeliverCallback() {
