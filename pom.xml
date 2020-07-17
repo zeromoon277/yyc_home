@@ -29,6 +29,7 @@
         <module>learn_zookeeper</module>
         <module>learn_datastructure</module>
         <module>learn_k8s</module>
+        <module>learn_dubbo_service</module>
     </modules>
 
     <packaging>pom</packaging>

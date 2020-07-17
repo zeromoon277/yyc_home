@@ -15,7 +15,7 @@ import java.io.UnsupportedEncodingException;
  * @version 1.0
  * @date 2020/6/19 0019 下午 17:59
  */
-public class SyncProducer {
+public class SyncProducer2 {
 
     public static void main(String[] args) throws MQClientException, UnsupportedEncodingException, RemotingException, InterruptedException, MQBrokerException {
         //Instantiate with a producer group name.

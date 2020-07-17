@@ -16,7 +16,7 @@ import java.util.List;
  * @version 1.0
  * @date 2020/6/19 0019 下午 18:08
  */
-public class Consumer {
+public class Consumer3 {
     public static void main(String[] args) throws InterruptedException, MQClientException {
 
         // Instantiate with specified consumer group name.
@@ -28,8 +28,6 @@ public class Consumer {
         // Subscribe one more more topics to consume.
         consumer.subscribe("my_craete_topic-2", "*");
         // Register callback to execute on arrival of messages fetched from brokers.
-
-
         consumer.registerMessageListener(new MessageListenerConcurrently() {
 
             @Override
