@@ -30,6 +30,8 @@
         <module>learn_datastructure</module>
         <module>learn_k8s</module>
         <module>learn_dubbo_service</module>
+        <module>learn_dubbo_service2</module>
+        <module>learn_thrift_server</module>
     </modules>
 
     <packaging>pom</packaging>
